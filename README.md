@@ -14,7 +14,14 @@ LaTeX package or the [`ppmcheckpdf.lua`][ppmcheckpdf.lua] in
 
 [ppmcheckpdf.lua]: https://github.com/muzimuzhi/latex-zutil/blob/main/support/ppmcheckpdf.lua
 
-### `setup-pre-commit-uv`
+### `setup-pre-commit-uv` (deprecated on 2026-09-15)
+
+[`muzimuzhi/latex-util@5dcc828`][muzimuzhi/latex-util@5dcc828] (ci(lint): install `pre-commit` using `mise`, 2026-09-15) replaced its only use with `mise`.
+
+[muzimuzhi/latex-util@5dcc828]: https://github.com/muzimuzhi/latex-zutil/commit/5dcc8288a4cecb8e2be3cc3329a24c1bd852d8ce
+
+<details>
+<summary>old doc</summary>
 
 Install [`pre-commit`][pre-commit] using [`uv`][uv], init it and setup caching
 
@@ -51,6 +58,8 @@ setup `uv` beforehand, then use this action with `setup-uv: false`.
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [uv]: https://github.com/astral-sh/uv
 [why-disable-uv-cache]: https://github.com/astral-sh/setup-uv/tree/v6/?tab=readme-ov-file#disable-cache-pruning
+
+</details>
 
 ### `unique-id`
 
