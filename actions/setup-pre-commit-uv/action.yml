@@ -73,7 +73,6 @@ runs:
     - name: Install pre-commit hooks
       shell: bash
       run: |
-        # Install pre-commit hooks
         pre-commit install \
           --config ${{ inputs.config }} \
           --install-hooks

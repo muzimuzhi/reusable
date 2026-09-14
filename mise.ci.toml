@@ -1,0 +1,6 @@
+# used in `lint.yml` workflow with `MISE_ENV=ci`
+[tools]
+"github:kjanat/actionlint" = "latest"
+pre-commit = "latest"
+shellcheck = "latest" # for actionlint
+typos = "latest"

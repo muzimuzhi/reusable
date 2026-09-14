@@ -10,7 +10,7 @@ minimum_pre_commit_version: "4.4.0"
 
 # https://pre-commit.ci/#configuration
 ci:
-  skip: [check-spelling]
+  skip: [actionlint,check-spelling]
 
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -24,10 +24,6 @@ repos:
   - id: check-yaml
   - id: end-of-file-fixer
   - id: trailing-whitespace
-- repo: https://github.com/kjanat/actionlint
-  rev: 722799fa4b8cc6734debb97bae24aca9e0dbaf59  # frozen: v1.17
-  hooks:
-  - id: actionlint
 # https://check-jsonschema.readthedocs.io/en/latest/precommit_usage.html#check-github-actions
 - repo: https://github.com/python-jsonschema/check-jsonschema
   rev: 12e63946db2c5cfcc9030fac21c3883ba88c6ed8  # frozen: 0.38.0
@@ -37,6 +33,11 @@ repos:
       # args: ['--verbose']
 - repo: local
   hooks:
+  - id: actionlint
+    name: Lint GitHub Actions workflow files
+    language: unsupported
+    entry: actionlint
+    pass_filenames: false
   # typos bumps version frequently, so use system installation instead of the
   # official pre-commit hook
   # https://github.com/crate-ci/typos/blob/master/docs/pre-commit.md
