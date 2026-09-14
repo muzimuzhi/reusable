@@ -10,7 +10,7 @@ minimum_pre_commit_version: "4.4.0"
 
 # https://pre-commit.ci/#configuration
 ci:
-  skip: [check-spelling]
+  skip: [actionlint,check-spelling]
 
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks

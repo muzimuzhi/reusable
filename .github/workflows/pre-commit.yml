@@ -28,3 +28,5 @@ jobs:
 
       - name: Setup pre-commit
         uses: $/actions/setup-pre-commit-uv
+        env:
+          SKIP: actionlint,check-spelling
