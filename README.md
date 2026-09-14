@@ -1,10 +1,10 @@
 # Reusable
 
-## Reusable Renovate config
+## Shareable Renovate config
 
 [`./renovate-config/default.jsonc`](./renovate-config/default.jsonc)
 
-## Reusable GitHub Actions
+## GitHub Actions
 
 ### `ppmcheckpdf-deps`
 
