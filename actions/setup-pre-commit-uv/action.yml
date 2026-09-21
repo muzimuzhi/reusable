@@ -33,7 +33,7 @@ runs:
     - name: Setup uv
       if: ${{ fromJSON(inputs.setup-uv) }}
       # since v8.0.0, astral-sh/setup-uv stopped providing major and minor tags
-      uses: astral-sh/setup-uv@v10.1.0
+      uses: astral-sh/setup-uv@v10.2.0
       with:
         # > By default, the uv cache is pruned after every run, removing
         # pre-built wheels, but retaining any wheels that were built from
